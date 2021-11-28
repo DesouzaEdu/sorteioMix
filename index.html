@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio do Mix</title>
+    <link rel="stylesheet" href="styles.css" />  
+</head>
+<body>
+    <header><h1>Sorteio Mix</h1></header>
+    <h2>Cadastro de player:</h2>    
+    <label for='nickPlayer'>Nick:</label>
+    <input type='text' maxlength="30" id='nickPlayer' size="30">
+    <p>Fileira:   
+    <input type='radio' id='fileira1' name='fileira' value='1'>
+    <label for='fileira1'>1</label>    
+    <input type='radio' id='fileira2'name='fileira' value='2'>
+    <label for='fileira2'>2</label>   
+    <input type='radio' id='fileira3' name='fileira' value='3'>     
+    <label for='fileira3'>3</label>    
+    <input type='radio' id='fileira4' name='fileira' value='4'>
+    <label for='fileira4'>4</label>     
+    <input type='radio' id='fileira5' name='fileira' value='5'> 
+    <label for='fileira5'>5</label>      
+    <input type='radio' id='indefinido'name='fileira' value='indefinido'>   
+    <label for='indefinido'>indefinida</label>
+    </p>
+    <br>
+    <label for='elo'>Elo:</label>
+    <input type='text' maxlength="30" id='elo' size="30">
+    <br>
+    <button id='cadastro'>Cadastrar</button>   
+    <table id='playersTable'>
+        <tr id='tableTitle'>
+            <td>Nick</td>
+            <td>Fileira</td>
+            <td>Elo</td>
+        </tr>          
+    </table>
+    <script src='script.js'></script>    
+</body>
+</html>
