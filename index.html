@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="styles.css" />  
 </head>
 <body>
-    <header><h1>Sorteio Mix</h1></header>
-    <h2>Cadastro de player:</h2>    
+    <header class=""><img width = '100px'id='logo' src='images/logo.png'><h1>Sorteio Mix</h1><nav><a href=''>Cadastro</a><a href="">Fileiras</a><a href="">Times</a></nav></header>
+    <main>
+    <fieldset>
+    <legend></legend><h2>Cadastro de player:</h2><legend></legend>    
     <label for='nickPlayer'>Nick:</label>
     <input type='text' maxlength="30" id='nickPlayer' size="30">
     <p>Fileira:   
@@ -30,14 +32,25 @@
     <label for='elo'>Elo:</label>
     <input type='text' maxlength="30" id='elo' size="30">
     <br>
+    </fieldset> 
+    <br><br>   
     <button id='cadastro'>Cadastrar</button>   
     <table id='playersTable'>
-        <tr id='tableTitle'>
+        <tr id='tableTitle' class = 'invisivel'>
             <td>Nick</td>
             <td>Fileira</td>
             <td>Elo</td>
         </tr>          
     </table>
+    <ol id='fileira1List' class='fileira invisivel'>Fileira 1:</ol>
+    <ol id='fileira2List' class='fileira invisivel'>Fileira 2:</ol>
+    <ol id='fileira3List' class='fileira invisivel'>Fileira 3:</ol>
+    <ol id='fileira4List' class='fileira invisivel'>Fileira 4:</ol>
+    <ol id='fileira5List' class='fileira invisivel'>Fileira 5:</ol>
+    <ol id='indefinidoList' class='fileira invisivel'>Fileira indefinida:</ol>
+    <button id='btnSorteio'>Sortear</button>
+    <div id='times'></div>
+    </main>
     <script src='script.js'></script>    
 </body>
 </html>

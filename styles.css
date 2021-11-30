@@ -1,3 +1,59 @@
-#tableTitle td {
-    color: white;
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+#tableTitle td {    
+}
+
+.fileira{    
+}
+
+.invisivel {
+    display: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;       
+    color: white;
+    padding: 20px 50px;
+    width: 100%;        
+    position: fixed;
+}
+
+nav{
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;    
+}
+main{
+    display: flex;  
+    margin-top: 150px;  
+    position: absolute;
+    
+}
+nav a:hover{
+    font-size: 30px;
+}
+
+#logo{
+    width: 100px;
+    border-radius: 50%;
+    align-self: flex-start;    
+}
+
+a{
+    opacity: 0.8;    
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+a:hover{
+    opacity: 1;
+} 
